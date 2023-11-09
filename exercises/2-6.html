@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <main>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur illo sint aliquid ab odit itaque, veniam nostrum porro reiciendis, facere distinctio eaque odio minima facilis quasi earum delectus officia!
+            </p>
+            <button id="openButton">Open</button>
+        </section>
+    </main>
+    <script>
+        const openButton = document.getElemendById("openButton");
+
+
+        function changeBackground(params) {
+            document.body.style.backgroundcolor = "yellow";
+        }
+        setTimeout(changeBackground, 3000);
+
+        console.log(window.document.location.hostname);
+        console.log(navigator.userAgent);
+       // alert("Your computer is being attacked by a virus. Click this link to run our virus scanner");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form>
+            <label for="teamsList">Teams</label>
+            <select id="teamsList">
+                <option value="">Select</option>
+                <option value="DAL">Dallas Cowboys</option>
+            </select>
+        </form>
+    </main>
+    <script>
+       let teams = [
+    {code :"DAL", name:"Dallas Cowboys", plays:"Arlington,TX"},
+    {code:"DEN", name:"Denver Broncos", plays:"Denver, CO"},
+    {code:"HOU", name:"Houston Texans", plays:"Houston, TX"},
+    {code:"KAN", name:"Kansas City Chiefs",
+ plays:"Kansas City, MO"},
+];
+
+//get html elements into variables
+let teamsList = document.getElementById("teamsList");
+
+//write functions
+function loadTeamsList() {
+    for (let team of teams) {
+        //creates an option element
+        let option = document.createElement("option");
+        //setting the value property is creating an attribute on the option element
+        option.value = teams.abbrev;
+
+        //or\
+        //  let option = new Option(team.name, teams.abbrev);
+    }
+}
+    </script>
+</body>
+</html>
+
+
+
+
